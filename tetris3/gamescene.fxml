@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane id="rootpane" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <HBox id="hbox" prefHeight="535.0" prefWidth="251.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </center>
+         <right>
+            <AnchorPane id="anchorpane" prefHeight="535.0" prefWidth="44.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox id="vbox" layoutX="56.0" layoutY="68.0" minWidth="150.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.topAnchor="20.0">
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" />
+                     </padding>
+                     <children>
+                        <StackPane id="stackpane" alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="120.0">
+                           <children>
+                              <Rectangle id="rectangle" arcHeight="5.0" arcWidth="5.0" height="120.0" stroke="#a49b9b" strokeType="INSIDE" strokeWidth="2.0" width="120.0">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="WHITE" />
+                                          <Stop color="WHITE" offset="0.007518796992481203" />
+                                          <Stop color="#eea8f857" offset="0.39849624060150346" />
+                                          <Stop color="#eea8f857" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Rectangle>
+                           </children>
+                        </StackPane>
+                        <HBox id="vhbox" prefHeight="40.0" prefWidth="100.0">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="57.0" text="Score:">
+                                 <font>
+                                    <Font name="Segoe Print" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label id="score" prefHeight="33.0" prefWidth="84.0" text="0" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="58.0" layoutY="241.0" prefHeight="131.0" prefWidth="91.0">
+                     <children>
+                        <Button id="pause" mnemonicParsing="false" prefHeight="41.0" prefWidth="96.0" text="Pause">
+                           <font>
+                              <Font name="MV Boli" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <Button id="restart" mnemonicParsing="false" prefHeight="41.0" prefWidth="95.0" text="Restart">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="MV Boli" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</StackPane>
